@@ -2,6 +2,8 @@ var path = require('path'),
     rootPath = path.normalize(__dirname + '/..'),
     env = process.env.NODE_ENV || 'development';
 
+var configDB = require('./config/dbuser.js');
+
 var config = {
   development: {
     root: rootPath,
@@ -9,7 +11,7 @@ var config = {
       name: 'comsumerapp'
     },
     port: process.env.PORT || 3000,
-    db: 'mongodb://localhost/comsumerapp-development'
+    db: configDB.Development.url
   },
 
   test: {
@@ -18,7 +20,7 @@ var config = {
       name: 'comsumerapp'
     },
     port: process.env.PORT || 3000,
-    db: 'mongodb://localhost/comsumerapp-test'
+    db: configDB.Test.url
   },
 
   production: {
@@ -27,7 +29,7 @@ var config = {
       name: 'comsumerapp'
     },
     port: process.env.PORT || 3000,
-    db: 'mongodb://localhost/comsumerapp-production'
+    db: configDB.Production.url
   }
 };
 

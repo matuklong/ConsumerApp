@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Reclame APP</title>
+        <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="./css/index.css" rel="stylesheet" type="text/css">
+        
+        
+        <!-- Referência: FreeCodeCamp = Line up Form Elements Responsively with Bootstrap -->
+    </head>
+    <body>
+
+    <div class="container-fluid">
+        <div class="row Row-App-Line">
+            <div class="col-xs-12">
+            <h2 class="text-primary text-center">Reclame APP</h2>
+            </div>
+            <!--<div class="col-xs-4">
+            <a href="#"><img class="img-responsive thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back. "></a>
+            </div>-->
+        </div>
+        <!--<img src="https://bit.ly/fcc-running-cats" class="img-responsive" alt="Three kittens running towards the camera. ">-->
+
+        <div class="row Row-App-Line">
+            <div class="col-xs-4">
+            <a href="#"><i class="fa fa-cab fa-5x"></i><span class="IconLabelText">Taxi</span></a>
+            </div>
+            <div class="col-xs-4">
+            <a href="#"><i class="fa fa-bus fa-5x"></i><span class="IconLabelText">Ônibus</span></a>
+            </div>
+            <div class="col-xs-4">
+            <a href="#"><i class="fa fa-bed fa-5x"></i><span class="IconLabelText">Hotel</span></a>
+            </div>
+        </div>
+        <div class="row Row-App-Line">
+            <div class="col-xs-4">
+            <a href="#"><i class="fa fa-road fa-5x"></i><span class="IconLabelText">Estrada</span></a>
+            </div>
+            <div class="col-xs-4">
+            <a href="#"><i class="fa fa-motorcycle fa-5x"></i><span class="IconLabelText">Moto</span></a>
+            </div>
+            <div class="col-xs-4">
+            <a href="#"><i class="fa fa-map fa-5x"></i><span class="IconLabelText">Mapa</span></a>
+            </div>
+        </div>
+        
+        <!--
+        <p>Things cats <span class="text-danger">love:</span></p>
+        <ul>
+            <li>cat nip</li>
+            <li>laser pointers</li>
+            <li>lasagna</li>
+        </ul>
+        <p>Top 3 things cats hate:</p>
+        <ol>
+            <li>flea treatment</li>
+            <li>thunder</li>
+            <li>other cats</li>
+        </ol>
+        -->
+        <form action="#">
+        <fieldset class="scheduler-border">
+            <legend class="scheduler-border">Envie sua reclamação</legend>
+            <div class="row Row-App-Line">
+                <div class="col-xs-4">
+                    <label><input type="radio" name="indoor-outdoor"> Taxi</label>
+                </div>
+                <div class="col-xs-4">
+                    <label><input type="radio" name="indoor-outdoor"> Ônibus</label>
+                </div>
+                <div class="col-xs-4">
+                    <label><input type="radio" name="indoor-outdoor"> Hotel</label>
+                </div>
+            </div>
+            <div class="row Row-App-Line">
+                <div class="col-xs-4">
+                    <label><input type="radio" name="indoor-outdoor"> Estrada</label>
+                </div>
+                <div class="col-xs-4">
+                    <label><input type="radio" name="indoor-outdoor"> Moto</label>
+                </div>
+                <div class="col-xs-4">
+                    <label><input type="radio" name="indoor-outdoor"> Mapa</label>
+                </div>
+            </div>
+            <!--
+            <div class="row">
+            <div class="col-xs-4">
+                <label><input type="checkbox" name="personality"> Loving</label>
+            </div>
+            <div class="col-xs-4">
+                <label><input type="checkbox" name="personality"> Lazy</label>
+            </div>
+            <div class="col-xs-4">
+                <label><input type="checkbox" name="personality"> Crazy</label>
+            </div>
+            </div>-->
+            <div class="row Row-App-Line">
+            <div class="col-xs-7"><input type="text" class="form-control" placeholder="Assunto" required></div>
+            <div class="col-xs-5"><button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Enviar</button></div>
+            </div>
+        </fieldset>
+        </form>
+        
+
+        <div class="row Row-App-Line">
+            <div class="col-xs-6">
+            <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>
+            </div>
+            <div class="col-xs-6">
+            <button class="btn btn-block btn-info"><i class="fa fa-info-circle"></i> Info</button>
+            </div>
+            <!--<div class="col-xs-4">
+            <button class="btn btn-block btn-danger"><i class="fa fa-trash"></i> Delete</button>
+            </div>-->
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+    </body>
+</html>    
